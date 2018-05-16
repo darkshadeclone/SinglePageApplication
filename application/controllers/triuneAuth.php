@@ -12,9 +12,10 @@ class triuneAuth extends MY_Controller {
 	 * config/routes.php, it's displayed at http://tua.edu.ph/triune
 	 *
 	 * AUTHOR: Randy D. Lagdaan
+	 * MODIFIED: Nicolai Nuris V. Musñgi
 	 * DESCRIPTION: Authentication Controller. Included login, registration, reset password, create token
 	 * DATE CREATED: March 12, 2018
-     * DATE UPDATED: March 14, 2018
+     * DATE UPDATED: May 16, 2018
 	 */
 
     function __construct() {
@@ -229,7 +230,7 @@ class triuneAuth extends MY_Controller {
  
                     //echo $message; //send this in email
 					
-					$this->_sendMail($toEmail ="dcisleta@tua.edu.ph", $subject = "For Verification", $message);
+					$this->_sendMail($toEmail ="nicolainurisvmusngi@tua.edu.ph", $subject = "For Verification", $message);
 
 				} else {
 					$this->session->set_flashdata('msg', "The personal information you've typed do not matched with your current records!");
